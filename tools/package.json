@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "svg-term-cli": "2.1.1"
-  }
+    "svg-term-cli": "2.1.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
